@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Mentorship System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="root"></div>
+  <header>
+    <h1>Virtual Mentorship Platform</h1>
+</header>
+<main>
+    <section id="registration">
+        <h2>Mentee Registration</h2>
+        
+        <form id="registration-form">
+          <label>User Name</label>
+          <input type="text" id="name" placeholder="Name" required>
+
+            <label>Email </label>
+            <input type="email" id="email" placeholder="Email" required>
+
+            <label>Password</label>
+            <input type="password" ide="password" placeholder="Password" required>
+
+            <label>Mobile Number</label>
+            <input type="number" id="number" placeholder="Phn Number" required>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+        </main>
+         <!-- JavaScript to redirect to about.html when Register button is clicked -->
+  <script>
+    document.getElementById("registration-form").addEventListener("submit", function(event) {
+      // Prevent the default form submission behavior
+      event.preventDefault();
+      // Redirect to about.html
+      window.location.href = "about.html";
+    });
+  </script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="LoginForm.js"></script>
+  <script src="MentorshipList.js"></script>
+  <script src="webpack.config.js"></script>
+</body>
+</html>
